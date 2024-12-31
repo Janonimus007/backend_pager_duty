@@ -14,7 +14,7 @@ Este proyecto es una aplicación en Flask que interactúa con la API de PagerDut
 
 1. Clona este repositorio:
    ```bash
-   git clone <URL-DEL-REPOSITORIO>
+   git clone https://github.com/Janonimus007/backend_pager_duty.git
    cd backend
 
 2. Crea y activa un entorno virtual:
@@ -28,4 +28,24 @@ Este proyecto es una aplicación en Flask que interactúa con la API de PagerDut
    ```bash
     cp .env.example .env
 
-# backend_pager_duty
+## Endpoints Disponibles
+
+### Servicios
+
+#### GET `/services`
+#### GET `/services/csv`
+
+### Incidentes por Servicio
+#### GET `/services/incidents`
+#### GET `/services/incidents/csv`
+
+### Estado de Incidentes por Servicio
+#### GET `/services/incidents/status`
+#### GET `/services/incidents/status/csv`
+
+### Equipos y Servicios
+#### GET `/teams/services`
+#### GET `/teams/services/csv`
+
+### Políticas de Escalamiento
+#### GET `/policies/teams/services`
